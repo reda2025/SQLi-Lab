@@ -23,7 +23,7 @@ La page `login.php` contient un formulaire de connexion qui est vulnérable à u
 - Accéder à l'URL suivante pour initialiser la base de données : `http://localhost/SQLi-Lab/setup.php`
 - Se connecter à `login.php` avec les identifiants suivants :
   - Utilisateur : (Peu importe)
-  - Mot de passe : `' OR '1'='1`
+  - Mot de passe : `' OR 'a'='a'
 
 Résultat : La connexion réussit, même avec un mot de passe invalide, en raison de l'injection SQL.
 
