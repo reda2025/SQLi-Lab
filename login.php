@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $u = $_POST["username"];
     $p = $_POST["password"];
 
-    // 🚨 Injection SQL possible ici !
     $sql = "SELECT * FROM users WHERE username = '$u' AND password = '$p'";
     $stmt = $db->query($sql);
 
